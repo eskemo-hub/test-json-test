@@ -1,0 +1,628 @@
+{
+    "_id": "65235c199bbb869a47b08973",
+    "title": "Witness Statement",
+    "name": "witnessStatement",
+    "path": "witnessstatement",
+    "type": "form",
+    "display": "form",
+    "tags": [],
+    "access": [
+        {
+            "type": "create_own",
+            "roles": []
+        },
+        {
+            "type": "create_all",
+            "roles": []
+        },
+        {
+            "type": "read_own",
+            "roles": []
+        },
+        {
+            "type": "read_all",
+            "roles": [
+                "6508d78f576f4fa7a22a5680",
+                "6508d78f576f4fa7a22a5684",
+                "6508d78f576f4fa7a22a5688"
+            ]
+        },
+        {
+            "type": "update_own",
+            "roles": []
+        },
+        {
+            "type": "update_all",
+            "roles": []
+        },
+        {
+            "type": "delete_own",
+            "roles": []
+        },
+        {
+            "type": "delete_all",
+            "roles": []
+        },
+        {
+            "type": "team_read",
+            "roles": []
+        },
+        {
+            "type": "team_write",
+            "roles": []
+        },
+        {
+            "type": "team_admin",
+            "roles": []
+        }
+    ],
+    "submissionAccess": [
+        {
+            "type": "create_own",
+            "roles": [
+                "6508d78f576f4fa7a22a5688"
+            ]
+        },
+        {
+            "type": "create_all",
+            "roles": []
+        },
+        {
+            "type": "read_own",
+            "roles": []
+        },
+        {
+            "type": "read_all",
+            "roles": []
+        },
+        {
+            "type": "update_own",
+            "roles": []
+        },
+        {
+            "type": "update_all",
+            "roles": []
+        },
+        {
+            "type": "delete_own",
+            "roles": []
+        },
+        {
+            "type": "delete_all",
+            "roles": []
+        },
+        {
+            "type": "team_read",
+            "roles": []
+        },
+        {
+            "type": "team_write",
+            "roles": []
+        },
+        {
+            "type": "team_admin",
+            "roles": []
+        }
+    ],
+    "owner": "6507ad6a3ec8b2fe1ad72af2",
+    "components": [
+        {
+            "key": "panel3",
+            "input": false,
+            "title": "Officer Information",
+            "tableView": false,
+            "components": [
+                {
+                    "label": "Columns",
+                    "input": false,
+                    "tableView": false,
+                    "key": "columns",
+                    "columns": [
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Officer Email",
+                                    "key": "columnsOfficerTakingStatement",
+                                    "placeholder": "Type Email",
+                                    "validate": {
+                                        "required": true
+                                    },
+                                    "type": "textfield",
+                                    "customDefaultValue": "if (typeof(Formio) !== 'undefined' && Formio.getUser) {\r\n  var user = Formio.getUser();\r\n  if (user && user.data && user.data.email) {\r\n    return user.data.email;\r\n  }\r\n}",
+                                    "customClass": "username"
+                                },
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Officer First Name",
+                                    "key": "officerFirstName",
+                                    "defaultValue": "Jim",
+                                    "validate": {
+                                        "required": true
+                                    },
+                                    "type": "textfield",
+                                    "lockKey": true
+                                },
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Officer Last Name",
+                                    "key": "officerLastName",
+                                    "defaultValue": "Gordon",
+                                    "validate": {
+                                        "required": true
+                                    },
+                                    "type": "textfield",
+                                    "lockKey": true
+                                }
+                            ],
+                            "width": 3,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 3
+                        },
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Rank",
+                                    "key": "columnsRank",
+                                    "defaultValue": "LT",
+                                    "type": "textfield",
+                                    "disabled": true
+                                },
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Badge No",
+                                    "key": "columnsBadgeNo",
+                                    "defaultValue": "123456",
+                                    "type": "textfield",
+                                    "disabled": true
+                                }
+                            ],
+                            "width": 3,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 3
+                        },
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Region",
+                                    "key": "columnsRegion",
+                                    "defaultValue": "Brisbane",
+                                    "type": "textfield",
+                                    "disabled": true
+                                },
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Station",
+                                    "key": "columnsStation",
+                                    "defaultValue": "Brisbane Metro",
+                                    "type": "textfield",
+                                    "disabled": true
+                                }
+                            ],
+                            "width": 3,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 3
+                        },
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Statement Number",
+                                    "key": "columnsStatementNumber",
+                                    "type": "textfield",
+                                    "disabled": true,
+                                    "customDefaultValue": "var randomNumber = Math.floor(Math.random() * 900000) + 100000;\r\nreturn randomNumber;\r\n",
+                                    "lockKey": true
+                                },
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Date",
+                                    "key": "columnsDate",
+                                    "type": "textfield",
+                                    "customDefaultValue": "var currentDate = new Date();\r\nreturn currentDate.toLocaleString();"
+                                }
+                            ],
+                            "width": 3,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 3
+                        }
+                    ],
+                    "type": "columns",
+                    "hideLabel": true
+                }
+            ],
+            "type": "panel",
+            "label": "Panel"
+        },
+        {
+            "key": "panel",
+            "input": false,
+            "title": "Witness Details",
+            "tableView": false,
+            "components": [
+                {
+                    "label": "Columns",
+                    "input": false,
+                    "tableView": false,
+                    "key": "columns2",
+                    "columns": [
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "First Name",
+                                    "key": "FirstName",
+                                    "type": "textfield",
+                                    "lockKey": true
+                                }
+                            ],
+                            "width": 4,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 4
+                        },
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Last Name",
+                                    "key": "LastName",
+                                    "type": "textfield",
+                                    "lockKey": true
+                                }
+                            ],
+                            "width": 4,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 4
+                        },
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Gender",
+                                    "key": "columns2Gender",
+                                    "values": [
+                                        {
+                                            "value": "male",
+                                            "label": "Male",
+                                            "shortcut": ""
+                                        },
+                                        {
+                                            "value": "female",
+                                            "label": "Female",
+                                            "shortcut": ""
+                                        }
+                                    ],
+                                    "type": "radio",
+                                    "optionsLabelPosition": "right",
+                                    "inline": true,
+                                    "lockKey": true
+                                }
+                            ],
+                            "width": 4,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 4
+                        }
+                    ],
+                    "type": "columns",
+                    "hideLabel": true
+                },
+                {
+                    "label": "Address",
+                    "tableView": true,
+                    "provider": "google",
+                    "key": "AddressField",
+                    "type": "address",
+                    "providerOptions": {
+                        "params": {
+                            "key": "AIzaSyDg-b2f8utUSpS6dc7EEW1NIo8tu4zeb-E",
+                            "autocompleteOptions": {}
+                        }
+                    },
+                    "input": true,
+                    "map": {
+                        "region": "",
+                        "key": "AIzaSyCES7CeYRDP0gb6GkoxKo1xBLRn73J2V1o"
+                    },
+                    "lockKey": true,
+                    "components": [
+                        {
+                            "label": "Address 1",
+                            "tableView": false,
+                            "key": "address1",
+                            "type": "textfield",
+                            "input": true,
+                            "customConditional": "show = _.get(instance, 'parent.manualMode', false);"
+                        },
+                        {
+                            "label": "Address 2",
+                            "tableView": false,
+                            "key": "address2",
+                            "type": "textfield",
+                            "input": true,
+                            "customConditional": "show = _.get(instance, 'parent.manualMode', false);"
+                        },
+                        {
+                            "label": "City",
+                            "tableView": false,
+                            "key": "city",
+                            "type": "textfield",
+                            "input": true,
+                            "customConditional": "show = _.get(instance, 'parent.manualMode', false);"
+                        },
+                        {
+                            "label": "State",
+                            "tableView": false,
+                            "key": "state",
+                            "type": "textfield",
+                            "input": true,
+                            "customConditional": "show = _.get(instance, 'parent.manualMode', false);"
+                        },
+                        {
+                            "label": "Country",
+                            "tableView": false,
+                            "key": "country",
+                            "type": "textfield",
+                            "input": true,
+                            "customConditional": "show = _.get(instance, 'parent.manualMode', false);"
+                        },
+                        {
+                            "label": "Zip Code",
+                            "tableView": false,
+                            "key": "zip",
+                            "type": "textfield",
+                            "input": true,
+                            "customConditional": "show = _.get(instance, 'parent.manualMode', false);"
+                        }
+                    ]
+                },
+                {
+                    "label": "Coulumns",
+                    "input": false,
+                    "tableView": false,
+                    "key": "panelCoulumns",
+                    "columns": [
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Date of Birth",
+                                    "key": "dateOfBirth",
+                                    "format": "yyyy-MM-dd",
+                                    "enableTime": false,
+                                    "datePicker": {
+                                        "datepickerMode": "day"
+                                    },
+                                    "timePicker": {
+                                        "hourStep": null,
+                                        "minuteStep": null,
+                                        "showMeridian": false
+                                    },
+                                    "validate": {
+                                        "custom": "var dob = new Date(data.dateOfBirth);\r\nvar cutoffDate = new Date();\r\ncutoffDate.setFullYear(cutoffDate.getFullYear() - 18);\r\nif (dob > cutoffDate) {\r\n  valid = \"You must be at least 16 years old to use this service.\";\r\n}",
+                                        "customMessage": "In the ACT the law states that any child victim or witness under the age of 18, who is giving evidence in a criminal proceeding, must be given by audiovisual link unless the court directs otherwise. This means that a child victim/witness can give evidence from a separate room to the courtroom via audiovisual link."
+                                    },
+                                    "type": "datetime",
+                                    "lockKey": true,
+                                    "widget": {
+                                        "type": "calendar",
+                                        "displayInTimezone": "viewer",
+                                        "locale": "en",
+                                        "useLocaleSettings": false,
+                                        "allowInput": true,
+                                        "mode": "single",
+                                        "enableTime": false,
+                                        "noCalendar": false,
+                                        "format": "yyyy-MM-dd",
+                                        "hourIncrement": null,
+                                        "minuteIncrement": null,
+                                        "time_24hr": true,
+                                        "minDate": null,
+                                        "maxDate": null
+                                    }
+                                },
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "YearsOld",
+                                    "key": "panelCoulumnsYearsOld",
+                                    "hidden": true,
+                                    "clearOnHide": false,
+                                    "type": "textfield",
+                                    "lockKey": true,
+                                    "calculateValue": "var dobString1 = '';\r\nvar dob1 = '';\r\nvar age1 = '';\r\n\r\nvar dobInputElement1 = document.querySelector('input[name=\"data[dateOfBirth]\"]');\r\ndobString1 = (dobInputElement1 !== null) ? dobInputElement1.value : '';\r\n\r\nif (dobString1 !== \"\") {\r\n  dob1 = new Date(dobString1);\r\n  age1 = calculateAge(dob1);\r\n\r\n  function calculateAge(birthday1) {\r\n    var now1 = new Date();\r\n    var age1 = now1.getFullYear() - birthday1.getFullYear();\r\n    var monthDiff = now1.getMonth() - birthday1.getMonth();\r\n    if (monthDiff < 0 || (monthDiff === 0 && now1.getDate() < birthday1.getDate())) {\r\n      age1--;\r\n    }\r\n    return age1;\r\n  }\r\n} \r\nreturn age1;\r\n"
+                                }
+                            ],
+                            "width": 6,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 6
+                        },
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Occupation",
+                                    "key": "panelCoulumnsOccupation",
+                                    "type": "textfield"
+                                }
+                            ],
+                            "width": 6,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 6
+                        }
+                    ],
+                    "type": "columns",
+                    "hideLabel": true
+                }
+            ],
+            "type": "panel",
+            "label": "Panel"
+        },
+        {
+            "key": "panel2",
+            "input": false,
+            "title": "Statement",
+            "tableView": false,
+            "components": [
+                {
+                    "label": "Text Area",
+                    "applyMaskOn": "change",
+                    "autoExpand": false,
+                    "hideLabel": true,
+                    "tableView": true,
+                    "inputFormat": "plain",
+                    "redrawOn": "data",
+                    "calculateValue": "var dobString = '';\r\nvar address = '';\r\nvar dob = '';\r\nvar age = '';\r\nvar gender = '';\r\n\r\nvar genderRadiobuttons = document.querySelectorAll('input[name^=\"data[columns2Gender]\"]:checked');\r\n\r\nif (genderRadiobuttons.length > 0) {\r\n  gender = genderRadiobuttons[0].value.trim();\r\n}\r\n\r\n\r\nvar dobInputElement = document.querySelector('input[name=\"data[dateOfBirth]\"]');\r\nvar dobString = (dobInputElement !== null) ? dobInputElement.value : '';\r\n\r\nvar addressField = document.querySelector('input[name=\"data[AddressField]\"]');\r\nvar address = (addressField !== null) ? addressField.value.trim() : '';\r\n\r\nif (dobString !== \"\") {\r\n  var dob = new Date(dobString);\r\n  var age = calculateAge(dob);\r\n\r\n  function calculateAge(birthday) {\r\n    var now = new Date();\r\n    var age = now.getFullYear() - birthday.getFullYear();\r\n    var monthDiff = now.getMonth() - birthday.getMonth();\r\n    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < birthday.getDate())) {\r\n      age--;\r\n    }\r\n    return age;\r\n  }\r\n\r\n  if (address !== \"\") {\r\n    return \"I am a \" + age + \" year old \" + gender + \", living at \" + address;\r\n  } else {\r\n    return \"I am a \" + age + \" year old \" + gender + \", but I have not provided my address.\";\r\n  }\r\n} else {\r\n  return \"Address is missing\";\r\n}\r\n",
+                    "key": "output",
+                    "type": "textarea",
+                    "input": true,
+                    "lockKey": true
+                },
+                {
+                    "label": "Text Area",
+                    "applyMaskOn": "change",
+                    "autoExpand": false,
+                    "hideLabel": true,
+                    "tableView": true,
+                    "defaultValue": "I can remember day...",
+                    "inputFormat": "plain",
+                    "calculateValue": "var firstName = '';\r\nvar lastName = '';\r\n\r\nvar firstNameField = document.querySelector('input[name=\"data[FirstName]\"]');\r\nif (firstNameField !== null) {\r\n    firstName = firstNameField.value.trim();\r\n}\r\n\r\nvar lastNameField = document.querySelector('input[name=\"data[LastName]\"]');\r\nif (lastNameField !== null) {\r\n    lastName = lastNameField.value.trim();\r\n}\r\n\r\nvar currentDate = new Date().toLocaleDateString('en-US');\r\nvar dayOfWeek = new Date().toLocaleDateString('en-US', { weekday: 'long' });\r\n\r\nif (firstName && lastName) {\r\n    var message = \"I, \" + firstName + \" \" + lastName + \", can remember that today is \" + dayOfWeek + \" (\" + currentDate + \").\";\r\n} else {\r\n    var message = \"Name fields are missing. Please enter your first name and last name.\";\r\n}\r\n\r\nreturn message;\r\n",
+                    "key": "panel2TextArea",
+                    "type": "textarea",
+                    "input": true
+                },
+                {
+                    "input": true,
+                    "tableView": true,
+                    "label": "Text Area",
+                    "key": "panel2TextArea3",
+                    "defaultValue": "On that day,",
+                    "type": "textarea",
+                    "inputFormat": "plain",
+                    "hideLabel": true
+                },
+                {
+                    "input": true,
+                    "components": [
+                        {
+                            "input": true,
+                            "tableView": true,
+                            "label": "Notes",
+                            "key": "panel2DataGridText",
+                            "placeholder": "These notes will be seperated by comma's in the final document.",
+                            "type": "textfield",
+                            "inDataGrid": true
+                        }
+                    ],
+                    "tableView": true,
+                    "label": "Any extra information?",
+                    "key": "panel2DataGrid",
+                    "type": "datagrid",
+                    "addAnotherPosition": "bottom"
+                },
+                {
+                    "label": "Columns",
+                    "input": false,
+                    "tableView": false,
+                    "key": "panel2Columns",
+                    "columns": [
+                        {
+                            "components": [],
+                            "width": 6,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 6
+                        },
+                        {
+                            "components": [
+                                {
+                                    "input": true,
+                                    "tableView": true,
+                                    "label": "Signature",
+                                    "key": "signature",
+                                    "type": "signature"
+                                }
+                            ],
+                            "width": 6,
+                            "offset": 0,
+                            "push": 0,
+                            "pull": 0,
+                            "size": "md",
+                            "currentWidth": 6
+                        }
+                    ],
+                    "type": "columns",
+                    "hideLabel": true
+                }
+            ],
+            "type": "panel",
+            "label": "Panel"
+        },
+        {
+            "input": true,
+            "label": "Submit",
+            "tableView": false,
+            "key": "submit",
+            "type": "button"
+        }
+    ],
+    "settings": {
+        "share": {
+            "theme": "",
+            "showHeader": true
+        }
+    },
+    "properties": {},
+    "project": "6508d78e576f4fa7a22a5679",
+    "controller": "",
+    "revisions": "",
+    "submissionRevisions": "",
+    "_vid": 0,
+    "created": "2023-10-09T01:49:13.574Z",
+    "modified": "2024-05-21T07:15:10.124Z",
+    "machineName": "demos:witnessStatement"
+}
